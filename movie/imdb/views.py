@@ -1,5 +1,4 @@
 from rest_framework import generics
-from rest_framework.pagination import LimitOffsetPagination
 from rest_framework import filters
 
 from imdb.models import Movie

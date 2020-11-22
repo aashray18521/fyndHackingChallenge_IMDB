@@ -24,5 +24,5 @@ For Admin Access: `python manage.py createsuperuser`
 5. Use Caching to further reduce load on DB and to reduce turnaround time.
 6. Use something like firehose for queuing Write tasks.
 
-https://medium.com/@aashray18521/comprehensive-architecture-of-serverless-rest-services-for-scale-on-aws-162926d4cdc2
 ```
+https://medium.com/@aashray18521/comprehensive-architecture-of-serverless-rest-services-for-scale-on-aws-162926d4cdc2
