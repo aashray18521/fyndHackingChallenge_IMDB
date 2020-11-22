@@ -1,8 +1,24 @@
 from rest_framework import serializers
 
-from .models import Movie, Genre
+from imdb.models import Movie, Genre
 
-class MovieSerializer(serializers.HyperlinkedModelSerializer):
+
+class GenreSerializer(serializers.ModelSerializer):
+    """
+    Serialize genre objects.
+    """
+    class Meta:
+        model = Genre
+        fields = ['name']
+
+
+class MovieSerializer(serializers.ModelSerializer):
+    """
+    Serialize movie objects
+    Can be used for validation too.
+    """
+    genre = GenreSerializer(many=True, read_only=True)
+
     class Meta:
         model = Movie
-        fields = ('id', 'name', 'imdb_score', 'popularity', 'director')
+        fields = ['name', 'director', 'popularity', 'imdb_score', 'genre']

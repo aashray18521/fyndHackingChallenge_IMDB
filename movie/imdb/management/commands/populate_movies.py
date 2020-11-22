@@ -8,7 +8,7 @@ from ...models import Movie, Genre
 
 class Command(BaseCommand):
     """
-    store imdb data from provided dump
+    Store imdb data from provided dump
     """
     def handle(self, *args, **options):
         filepath = str(settings.BASE_DIR) + '/imdb.json'
