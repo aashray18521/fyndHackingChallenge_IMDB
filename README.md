@@ -1,6 +1,6 @@
 # fyndHackingChallenge_IMDB
 
-## Project Setup and Run
+### Project Setup and Run
 ```
 python3 -m virtualenv env
 pip install -r requirements.txt
@@ -16,7 +16,7 @@ GET movie by name: http://127.0.0.1:8000/imdb/movies?search=the%20Wizard%20of%20
 
 For Admin Access: `python manage.py createsuperuser`
 
-## Scaling Task
+### Scaling Task
 ```
 1. Use Auto Scaling Groups to spin up/ tear down instances as per network load.
 2. Use Read Replicas of DB for the Read tasks. We can have a load balancer on top of this to further improve Reads' turnaround time.
