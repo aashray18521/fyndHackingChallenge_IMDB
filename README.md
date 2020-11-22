@@ -10,6 +10,7 @@ python manage.py runserver
 ```
 
 GET all movies: http://127.0.0.1:8000/imdb/movies
+
 GET movie by name: http://127.0.0.1:8000/imdb/movies?search=the%20Wizard%20of%20Oz
 
 For Admin Access: `python manage.py createsuperuser`
