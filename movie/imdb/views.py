@@ -12,6 +12,5 @@ class MoviesList(generics.ListAPIView):
     """
     queryset = Movie.objects.all()
     serializer_class = MovieSerializer
-    pagination_class = LimitOffsetPagination
     filter_backends = [filters.SearchFilter]
     search_fields = ['name', 'director', 'popularity', 'imdb_score']
