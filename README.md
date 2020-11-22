@@ -8,6 +8,7 @@ python manage.py migrate
 python manage.py populate_movies
 python manage.py runserver
 ```
+### Tests
 
 GET all movies: http://127.0.0.1:8000/imdb/movies
 
